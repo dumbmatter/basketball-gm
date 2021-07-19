@@ -93,7 +93,7 @@ const genPlayers = async (
 			p.college = "Washington State University";
 			p.firstName = "LaVar";
 			p.hgt = 78;
-			p.imgURL = "/img/lavar.jpg";
+			p.imgURL = "/img/easter-eggs/lavar.jpg";
 			p.lastName = "Ball";
 			p.weight = 250;
 			Object.assign(p.ratings[0], {
@@ -196,7 +196,7 @@ const genPlayers = async (
 			p.college = "Wharton";
 			p.firstName = "Donald";
 			p.hgt = 75;
-			p.imgURL = "/img/trump.jpg";
+			p.imgURL = "/img/easter-eggs/trump.jpg";
 			p.lastName = "Trump";
 			p.weight = 240;
 			Object.assign(p.ratings[0], {
@@ -231,6 +231,669 @@ const genPlayers = async (
 					pids: [pid],
 					tids: [g.get("userTid")],
 				});
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 14) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = draftYear - 75;
+			p.born.loc = "Roman Empire";
+			p.college = "";
+			p.firstName = "Augustus";
+			p.hgt = 69;
+			p.imgURL = "/img/easter-eggs/augustus.jpg";
+			p.lastName = "";
+			p.weight = 180;
+			Object.assign(p.ratings[0], {
+				hgt: 11,
+				stre: 80,
+				spd: 80,
+				jmp: 80,
+				endu: 80,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 80,
+				oiq: 80,
+				diq: 80,
+				drb: 80,
+				pss: 80,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 188) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 169;
+			p.born.loc = "China";
+			p.college = "";
+			p.firstName = "Dong";
+			p.hgt = 60;
+			p.imgURL = "/img/easter-eggs/zhuo.jpg";
+			p.lastName = "Zhuo";
+			p.weight = 250;
+			Object.assign(p.ratings[0], {
+				hgt: 0,
+				stre: 65,
+				spd: 80,
+				jmp: 80,
+				endu: 50,
+				ins: 55,
+				dnk: 70,
+				ft: 80,
+				fg: 60,
+				tp: 60,
+				oiq: 55,
+				diq: 55,
+				drb: 80,
+				pss: 80,
+				reb: 60,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 244) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 204;
+			p.born.loc = "Roman Empire";
+			p.college = "";
+			p.firstName = "Philip";
+			p.hgt = 69;
+			p.imgURL = "/img/easter-eggs/philip.jpg";
+			p.lastName = "The Arab";
+			p.weight = 155;
+			Object.assign(p.ratings[0], {
+				hgt: 11,
+				stre: 80,
+				spd: 80,
+				jmp: 80,
+				endu: 80,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 60,
+				oiq: 80,
+				diq: 80,
+				drb: 80,
+				pss: 80,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 360) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 331;
+			p.born.loc = "Roman Empire";
+			p.college = "";
+			p.firstName = "Julian";
+			p.hgt = 64;
+			p.imgURL = "/img/easter-eggs/julian.jpg";
+			p.lastName = "The Apostate";
+			p.weight = 130;
+			Object.assign(p.ratings[0], {
+				hgt: 0,
+				stre: 80,
+				spd: 80,
+				jmp: 80,
+				endu: 80,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 60,
+				oiq: 80,
+				diq: 80,
+				drb: 90,
+				pss: 80,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 433) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 406;
+			p.born.loc = "Central Asia";
+			p.college = "";
+			p.firstName = "Attila";
+			p.hgt = 59;
+			p.imgURL = "/img/easter-eggs/atilla.jpg";
+			p.lastName = "The Hun";
+			p.weight = 120;
+			Object.assign(p.ratings[0], {
+				hgt: 0,
+				stre: 100,
+				spd: 100,
+				jmp: 100,
+				endu: 100,
+				ins: 90,
+				dnk: 90,
+				ft: 80,
+				fg: 80,
+				tp: 50,
+				oiq: 80,
+				diq: 80,
+				drb: 80,
+				pss: 70,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 500) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = draftYear - 19;
+			p.born.loc = "Great Britian";
+			p.college = "";
+			p.firstName = "King";
+			p.hgt = 75;
+			p.imgURL = "/img/easter-eggs/arthur.jpg";
+			p.lastName = "Arthur";
+			p.weight = 200;
+			Object.assign(p.ratings[0], {
+				hgt: 33,
+				stre: 50,
+				spd: 70,
+				jmp: 75,
+				endu: 50,
+				ins: 50,
+				dnk: 55,
+				ft: 60,
+				fg: 50,
+				tp: 60,
+				oiq: 50,
+				diq: 50,
+				drb: 80,
+				pss: 91,
+				reb: 65,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 907) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 852;
+			p.born.loc = "China";
+			p.college = "";
+			p.firstName = "Zhu";
+			p.hgt = 66;
+			p.imgURL = "/img/easter-eggs/wen.jpg";
+			p.lastName = "Wen";
+			p.weight = 150;
+			Object.assign(p.ratings[0], {
+				hgt: 1,
+				stre: 50,
+				spd: 100,
+				jmp: 90,
+				endu: 75,
+				ins: 60,
+				dnk: 75,
+				ft: 60,
+				fg: 50,
+				tp: 80,
+				oiq: 85,
+				diq: 75,
+				drb: 80,
+				pss: 90,
+				reb: 70,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 989) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 970;
+			p.born.loc = "Iceland";
+			p.college = "";
+			p.firstName = "Leif";
+			p.hgt = 68;
+			p.imgURL = "/img/easter-eggs/erikson.jpg";
+			p.lastName = "Erikson";
+			p.weight = 185;
+			Object.assign(p.ratings[0], {
+				hgt: 7,
+				stre: 45,
+				spd: 81,
+				jmp: 98,
+				endu: 70,
+				ins: 71,
+				dnk: 81,
+				ft: 50,
+				fg: 60,
+				tp: 55,
+				oiq: 54,
+				diq: 51,
+				drb: 80,
+				pss: 71,
+				reb: 61,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1206) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1162;
+			p.born.loc = "Mongolia";
+			p.college = "";
+			p.firstName = "Genghis";
+			p.hgt = 74;
+			p.imgURL = "/img/easter-eggs/khan.jpg";
+			p.lastName = "Khan";
+			p.weight = 185;
+			Object.assign(p.ratings[0], {
+				hgt: 29,
+				stre: 70,
+				spd: 86,
+				jmp: 86,
+				endu: 86,
+				ins: 90,
+				dnk: 90,
+				ft: 70,
+				fg: 85,
+				tp: 55,
+				oiq: 90,
+				diq: 40,
+				drb: 70,
+				pss: 70,
+				reb: 70,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1573) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1564;
+			p.born.loc = "England";
+			p.college = "";
+			p.firstName = "William";
+			p.hgt = 70;
+			p.imgURL = "/img/easter-eggs/shakespeare.jpg";
+			p.lastName = "Shakespeare";
+			p.weight = 170;
+			Object.assign(p.ratings[0], {
+				hgt: 16,
+				stre: 45,
+				spd: 85,
+				jmp: 85,
+				endu: 45,
+				ins: 75,
+				dnk: 75,
+				ft: 70,
+				fg: 55,
+				tp: 55,
+				oiq: 55,
+				diq: 55,
+				drb: 75,
+				pss: 60,
+				reb: 75,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1657) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1638;
+			p.born.loc = "France";
+			p.college = "";
+			p.firstName = "King";
+			p.hgt = 75;
+			p.imgURL = "/img/easter-eggs/louis.jpg";
+			p.lastName = "Louis XIV";
+			p.weight = 195;
+			Object.assign(p.ratings[0], {
+				hgt: 33,
+				stre: 30,
+				spd: 70,
+				jmp: 50,
+				endu: 45,
+				ins: 80,
+				dnk: 80,
+				ft: 70,
+				fg: 55,
+				tp: 65,
+				oiq: 60,
+				diq: 37,
+				drb: 90,
+				pss: 80,
+				reb: 40,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1370) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1328;
+			p.born.loc = "China";
+			p.college = "";
+			p.firstName = "Emperor";
+			p.hgt = 64;
+			p.imgURL = "/img/easter-eggs/yuanzhang.jpg";
+			p.lastName = "Zhu Yuanzhang";
+			p.weight = 300;
+			Object.assign(p.ratings[0], {
+				hgt: 0,
+				stre: 80,
+				spd: 80,
+				jmp: 80,
+				endu: 80,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 80,
+				oiq: 80,
+				diq: 80,
+				drb: 100,
+				pss: 100,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1431) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1412;
+			p.born.loc = "France";
+			p.college = "";
+			p.firstName = "Joan of";
+			p.hgt = 65;
+			p.imgURL = "/img/easter-eggs/joan.jpg";
+			p.lastName = "Arc";
+			p.weight = 155;
+			Object.assign(p.ratings[0], {
+				hgt: 2,
+				stre: 50,
+				spd: 90,
+				jmp: 90,
+				endu: 50,
+				ins: 60,
+				dnk: 60,
+				ft: 60,
+				fg: 60,
+				tp: 60,
+				oiq: 50,
+				diq: 50,
+				drb: 80,
+				pss: 80,
+				reb: 50,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1789) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1732;
+			p.born.loc = "USA";
+			p.college = "";
+			p.firstName = "George";
+			p.hgt = 74;
+			p.imgURL = "/img/easter-eggs/washington.jpg";
+			p.lastName = "Washington";
+			p.weight = 180;
+			Object.assign(p.ratings[0], {
+				hgt: 29,
+				stre: 80,
+				spd: 80,
+				jmp: 80,
+				endu: 80,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 65,
+				oiq: 85,
+				diq: 80,
+				drb: 80,
+				pss: 80,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1861) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1809;
+			p.born.loc = "USA";
+			p.college = "";
+			p.firstName = "Abraham";
+			p.hgt = 76;
+			p.imgURL = "/img/easter-eggs/lincoln.jpg";
+			p.lastName = "Lincoln";
+			p.weight = 190;
+			Object.assign(p.ratings[0], {
+				hgt: 38,
+				stre: 80,
+				spd: 80,
+				jmp: 90,
+				endu: 80,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 60,
+				oiq: 80,
+				diq: 100,
+				drb: 80,
+				pss: 60,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1960) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1917;
+			p.born.loc = "USA";
+			p.college = "Harvard";
+			p.firstName = "John";
+			p.hgt = 72;
+			p.imgURL = "/img/easter-eggs/kennedy.jpg";
+			p.lastName = "Kennedy";
+			p.weight = 160;
+			Object.assign(p.ratings[0], {
+				hgt: 16,
+				stre: 70,
+				spd: 70,
+				jmp: 70,
+				endu: 70,
+				ins: 95,
+				dnk: 95,
+				ft: 95,
+				fg: 85,
+				tp: 70,
+				oiq: 80,
+				diq: 80,
+				drb: 90,
+				pss: 75,
+				reb: 60,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
+			}
+		};
+			if (Math.random() < 0.75) {
+			if (draftYear === 1492) {
+			const p = player.generate(
+				PLAYER.UNDRAFTED,
+				19,
+				draftYear,
+				false,
+				scoutingRank,
+			);
+			p.born.year = 1451;
+			p.born.loc = "Genoa";
+			p.college = "";
+			p.firstName = "Christopher";
+			p.hgt = 68;
+			p.imgURL = "/img/easter-eggs/columbus.jpg";
+			p.lastName = "Columbus";
+			p.weight = 155;
+			Object.assign(p.ratings[0], {
+				hgt: 8,
+				stre: 75,
+				spd: 75,
+				jmp: 75,
+				endu: 100,
+				ins: 80,
+				dnk: 80,
+				ft: 80,
+				fg: 80,
+				tp: 70,
+				oiq: 90,
+				diq: 75,
+				drb: 100,
+				pss: 70,
+				reb: 80,
+			});
+			await player.develop(p, 0);
+			player.updateValues(p);
+			const pid = await idb.cache.players.add(p);
 			}
 		}
 	}
